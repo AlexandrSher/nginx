@@ -1,2 +1,0 @@
-# nginx
-for nginx module
