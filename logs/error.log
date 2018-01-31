@@ -65,3 +65,54 @@
 2018/01/30 16:14:14 [emerg] 4677#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:74
 2018/01/30 16:15:42 [error] 4806#0: *1 open() "/home/sasa/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.16, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.16:8080"
 2018/01/30 16:15:42 [error] 4806#0: *1 open() "/home/sasa/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.16, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.16:8080"
+2018/01/30 16:35:08 [error] 4806#0: *2 open() "/home/sasa/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.16:8080"
+2018/01/30 16:49:46 [error] 5630#0: *1 access forbidden by rule, client: 192.168.122.1, server: 192.168.122.16, request: "GET /status HTTP/1.1", host: "192.168.122.16:8080", referrer: "http://192.168.122.16:8080/"
+2018/01/31 12:38:08 [error] 3835#0: *1 open() "/home/sasa/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.16"
+2018/01/31 12:52:19 [emerg] 4240#0: "proxy_pass" directive is not allowed here in /home/sasa/nginx/conf/vhosts/lb.conf:11
+2018/01/31 12:53:04 [emerg] 4263#0: "proxy_pass" directive is not allowed here in /home/sasa/nginx/conf/vhosts/lb.conf:11
+2018/01/31 12:54:17 [emerg] 4338#0: "proxy_pass" directive is not allowed here in /home/sasa/nginx/conf/vhosts/lb.conf:11
+2018/01/31 12:54:37 [emerg] 4347#0: "proxy_pass" directive is not allowed here in /home/sasa/nginx/conf/vhosts/lb.conf:11
+2018/01/31 12:56:25 [emerg] 4522#0: invalid URL prefix in /home/sasa/nginx/conf/vhosts/lb.conf:13
+2018/01/31 13:05:00 [alert] 4731#0: unlink() "/home/sasa/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2018/01/31 13:23:55 [error] 5223#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://192.168.122.188:8443/", host: "192.168.122.16:443"
+2018/01/31 13:23:55 [error] 5223#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://192.168.122.153:8443/", host: "192.168.122.16:443"
+2018/01/31 13:23:55 [error] 5223#0: *1 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", upstream: "http://backend/favicon.ico", host: "192.168.122.16:443"
+2018/01/31 13:23:55 [error] 5223#0: *1 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", upstream: "http://backend/favicon.ico", host: "192.168.122.16:443"
+2018/01/31 13:23:57 [error] 5223#0: *4 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "192.168.122.16:443"
+2018/01/31 13:30:28 [error] 5508#0: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://192.168.122.188:8443/", host: "192.168.122.16"
+2018/01/31 13:30:28 [error] 5508#0: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://192.168.122.153:8443/", host: "192.168.122.16"
+2018/01/31 13:30:28 [error] 5508#0: *2 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", upstream: "http://backend/favicon.ico", host: "192.168.122.16"
+2018/01/31 13:30:28 [error] 5508#0: *2 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET /favicon.ico HTTP/1.1", upstream: "http://backend/favicon.ico", host: "192.168.122.16"
+2018/01/31 13:30:38 [error] 5508#0: *2 no live upstreams while connecting to upstream, client: 192.168.122.1, server: 192.168.122.16, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "192.168.122.16"
+2018/01/31 13:40:34 [emerg] 5690#0: unknown directive "vhost_traffic-status-display" in /home/sasa/nginx/conf/vhosts/lb.conf:17
+2018/01/31 13:41:10 [emerg] 5708#0: unknown directive "vhost_traffic-status-display" in /home/sasa/nginx/conf/vhosts/lb.conf:17
+2018/01/31 13:41:27 [emerg] 5725#0: unknown directive "vhost_traffic-status-display" in /home/sasa/nginx/conf/vhosts/lb.conf:17
+2018/01/31 14:18:19 [emerg] 6529#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:76
+2018/01/31 14:19:34 [emerg] 6565#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:76
+2018/01/31 14:20:11 [emerg] 6605#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:76
+2018/01/31 14:20:23 [emerg] 6624#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:76
+2018/01/31 14:21:50 [emerg] 6682#0: unexpected "}" in /home/sasa/nginx/conf/nginx.conf:76
+2018/01/31 14:23:05 [warn] 6761#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:23:05 [warn] 6764#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:30:13 [warn] 7097#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:30:13 [warn] 7099#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:33:18 [warn] 7143#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:33:18 [warn] 7147#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:35:08 [warn] 7186#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:35:08 [warn] 7190#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:35:39 [error] 7193#0: *5 open() "/home/sasa/nginx/html/fdf" failed (2: No such file or directory), client: 192.168.122.1, server: 192.168.122.16, request: "GET /fdf HTTP/1.1", host: "192.168.122.16"
+2018/01/31 14:38:51 [warn] 7246#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:38:51 [warn] 7248#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:38:52 [warn] 7272#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:38:52 [warn] 7275#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:42:00 [warn] 7343#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:42:01 [warn] 7345#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:42:20 [error] 7350#0: *3 open() "/home/sasa/nginx/html/jfh" failed (2: No such file or directory), client: 192.168.122.1, server: 192.168.122.16, request: "GET /jfh HTTP/1.1", host: "192.168.122.16"
+2018/01/31 14:42:47 [warn] 7376#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:42:47 [warn] 7379#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:46:02 [warn] 7426#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:46:02 [warn] 7427#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:46:34 [warn] 7459#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 14:46:34 [warn] 7461#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 15:12:02 [warn] 7963#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
+2018/01/31 15:12:02 [warn] 7965#0: conflicting server name "192.168.122.16" on 0.0.0.0:8080, ignored
